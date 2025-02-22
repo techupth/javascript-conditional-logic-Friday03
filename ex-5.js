@@ -1,5 +1,15 @@
 function calculateStudentGrade(score) {
-  // Start coding here
+  let grade;
+  score >= 90
+  ?(grade = "A")
+  : score >= 80 && score < 90
+  ?(grade = "B")
+  : score >= 70 && score < 80
+  ?(grade = "C")
+  : score >= 60 && score < 70
+  ?(grade = "D")
+  :(grade = "F")
+  return grade
 }
 
 // Example case
